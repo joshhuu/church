@@ -1,0 +1,199 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Welcome Home" description="New Life House of Glory - Go into all the world and preach the gospel to all creation. Join our loving community of faith.">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-r from-primary-900 via-primary-800 to-primary-700 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-black opacity-20"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-30"></div>
+    
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <svg class="w-full h-full" viewBox="0 0 100 100">
+        <defs>
+          <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <rect width="100" height="100" fill="url(#grid)" />
+      </svg>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+      <div class="text-center animate-fade-in">
+        <h1 class="text-4xl md:text-6xl font-bold mb-12 leading-tight">
+          <span class="bg-gradient-to-r from-gold-300 to-gold-400 bg-clip-text text-transparent">
+            New Life House of Glory
+          </span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-2 text-blue-100 max-w-3xl mx-auto leading-relaxed">
+          "Go into all the world and preach the gospel to all creation."
+        </p>
+        <p class="text-base md:text-lg mb-8 text-blue-100 max-w-md mx-auto leading-relaxed text-center">
+          Mark 16:15</p>    
+        <p class="text-lg mb-12 text-blue-200 max-w-2xl mx-auto">
+          Join our loving community as we spread God's love and share the gospel with the world.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
+          <a href="https://www.youtube.com/@newlifehouseofglory" target="_blank" rel="noopener noreferrer">
+            <div class="bg-gradient-to-r from-gold-400 to-gold-500 text-primary-900 px-8 py-4 rounded-lg text-lg font-semibold hover:from-gold-300 hover:to-gold-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              Watch Our Videos
+            </div>
+          </a>
+          <a href="/prayer" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary-900 transition-all duration-300 transform hover:scale-105">
+            Submit Prayer Request
+          </a>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-pulse-gentle">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Welcome Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Welcome Home</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          At New Life House of Glory, we believe every person has a purpose and calling from God. 
+          Whether you're new to faith or have been walking with Jesus for years, you'll find a warm, 
+          welcoming community here.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center p-8 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Biblical Teaching</h3>
+          <p class="text-gray-600">Expository preaching that helps you understand and apply God's Word to your daily life.</p>
+        </div>
+
+        <div class="text-center p-8 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Loving Community</h3>
+          <p class="text-gray-600">Connect with fellow believers through small groups, events, and meaningful friendships.</p>
+        </div>
+
+        <div class="text-center p-8 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Global Mission</h3>
+          <p class="text-gray-600">Reach the world with the gospel through local outreach and international missions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Services -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Join Us This Week</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Experience God's presence with us in Worship, Fellowship, and the Word.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-8">
+          <h3 class="text-2xl font-bold text-primary-900 mb-4">Sunday Service 1</h3>
+          <div class="space-y-3 text-primary-800">
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span>10:00 AM - 1:00 PM</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>Narasimhanaicken Palayam, Coimbatore</span>
+            </div>
+          </div>
+          <p class="text-primary-700 mt-4 mb-6">
+            Join us for powerful worship, biblical preaching, and fellowship with believers from all walks of life.
+          </p>
+          <a href="/location" class="inline-flex items-center text-primary-600 font-semibold hover:text-primary-800 transition-colors duration-200">
+            Get Directions
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="bg-gradient-to-br from-gold-50 to-gold-100 rounded-xl p-8">
+          <h3 class="text-2xl font-bold text-gold-900 mb-4">Sunday Service 2</h3>
+          <div class="space-y-3 text-gold-800">
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span>5:00 PM - 7:00PM</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>Veerapandi Pirivu, Coimbatore </span>
+            </div>
+          </div>
+          <p class="text-gold-700 mt-4 mb-6">
+            Join our Evening Service and experience a time of worship, prayer, and community as we seek God's presence together.
+          </p>
+          <a href="/location" class="inline-flex items-center text-primary-600 font-semibold hover:text-primary-800 transition-colors duration-200">
+            Get Directions
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-gradient-to-r from-primary-600 to-primary-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Know Us More</h2>
+      <p class="text-xl mb-8 text-blue-100">
+        Whether you're exploring faith for the first time or looking for a church home, 
+        we'd love to welcome you into our family.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/about" class="bg-white text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+          Learn More About Us
+        </a>
+        <a href="/contact" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary-600 transition-all duration-300 transform hover:scale-105">
+          Get Connected
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
