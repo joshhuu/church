@@ -4,11 +4,18 @@ const currentPath = Astro.url.pathname;
 
 <header class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
+    <div class="flex justify-between items-center h-20">
       <!-- Logo -->
-      <div class="flex-shrink-0">
-        <a href="/" class="text-xl font-bold text-primary-900 hover:text-primary-700 transition-colors duration-200">
-          New Life House of Glory
+       <div class="flex-shrink-0">
+        <a href="/" class="flex items-center hover:opacity-80 transition-opacity duration-200">
+          <img 
+            src="/images/nlhog_logo.png" 
+            alt="New Life House of Glory" 
+            class="h-16 w-auto"
+          />
+          <div class="ml-3 hidden sm:block">
+            <h1 class="text-xl font-bold text-gray-900">New Life House of Glory</h1>
+          </div>
         </a>
       </div>
 
@@ -21,20 +28,14 @@ const currentPath = Astro.url.pathname;
           <a href="/about" class={`${currentPath === '/about' ? 'text-primary-900 font-semibold' : 'text-gray-700 hover:text-primary-700'} px-3 py-2 text-sm font-medium transition-colors duration-200`}>
             About
           </a>
-          <a href="/watch" class={`${currentPath === '/watch' ? 'text-primary-900 font-semibold' : 'text-gray-700 hover:text-primary-700'} px-3 py-2 text-sm font-medium transition-colors duration-200`}>
-            Watch
-          </a>
-          <a href="/prayer" class={`${currentPath === '/prayer' ? 'text-primary-900 font-semibold' : 'text-gray-700 hover:text-primary-700'} px-3 py-2 text-sm font-medium transition-colors duration-200`}>
-            Prayer
-          </a>
-          <a href="/support" class={`${currentPath === '/support' ? 'text-primary-900 font-semibold' : 'text-gray-700 hover:text-primary-700'} px-3 py-2 text-sm font-medium transition-colors duration-200`}>
-            Support
-          </a>
           <a href="/contact" class={`${currentPath === '/contact' ? 'text-primary-900 font-semibold' : 'text-gray-700 hover:text-primary-700'} px-3 py-2 text-sm font-medium transition-colors duration-200`}>
             Contact
           </a>
           <a href="/location" class={`${currentPath === '/location' ? 'text-primary-900 font-semibold' : 'text-gray-700 hover:text-primary-700'} px-3 py-2 text-sm font-medium transition-colors duration-200`}>
             Location
+          </a>
+          <a href="/support" class={`${currentPath === '/support' ? 'text-primary-900 font-semibold' : 'text-gray-700 hover:text-primary-700'} px-3 py-2 text-sm font-medium transition-colors duration-200`}>
+            Support This Ministry
           </a>
         </div>
       </div>

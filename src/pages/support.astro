@@ -1,18 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Support This Ministry" description="Partner with New Life House of Glory through financial support. Help us spread the gospel worldwide through your generous giving.">
+<Layout
+  title="Support This Ministry"
+  description="Partner with New Life House of Glory through financial support. Help us spread the gospel worldwide through your generous giving."
+>
   <Header />
-  
+
   <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-primary-700 to-primary-800 text-white py-20">
+  <section
+    class="bg-gradient-to-r from-primary-700 to-primary-800 text-white py-20"
+  >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h1 class="text-4xl md:text-5xl font-bold mb-6">Support This Ministry</h1>
       <p class="text-xl text-blue-100 max-w-3xl mx-auto">
-        Partner with us as we fulfill the Great Commission. Your generous support helps us reach the world with the gospel of Jesus Christ.
+        Your generous support helps us reach the world with the gospel of Jesus
+        Christ.
       </p>
     </div>
   </section>
@@ -20,316 +26,160 @@ import Footer from '../components/Footer.astro';
   <!-- Giving Options -->
   <section class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ways to Give</h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-          Choose the giving method that works best for you. Every gift, regardless of size, makes an eternal difference.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="flex justify-center">
         <!-- Online Giving -->
-        <div class="bg-gradient-to-br from-primary-50 to-blue-50 rounded-xl p-8">
+        <div
+          class="bg-gradient-to-br from-primary-50 to-blue-50 rounded-xl p-8"
+        >
           <div class="text-center mb-8">
-            <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            <div
+              class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-primary-900 mb-4">Online Giving</h3>
+            <h3 class="text-2xl font-bold text-primary-900 mb-4">
+              Digital Giving
+            </h3>
             <p class="text-primary-700 mb-6">
-              Give securely online with your credit card, debit card, or bank transfer. Set up one-time or recurring gifts.
+              Support this ministry using UPI, bank transfer, or scan our QR
+              code for quick donations.
             </p>
           </div>
 
-          <!-- Giving Form -->
-          <div class="bg-white rounded-lg p-6 shadow-lg">
-            <form id="giving-form" class="space-y-4">
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Giving Type</label>
-                <div class="grid grid-cols-2 gap-2">
-                  <label class="relative">
-                    <input type="radio" name="giving-type" value="one-time" checked class="sr-only">
-                    <div class="border-2 border-primary-200 rounded-lg p-3 text-center cursor-pointer hover:border-primary-400 transition-colors duration-200 bg-primary-50 border-primary-500">
-                      <span class="text-sm font-medium text-primary-700">One-Time</span>
-                    </div>
-                  </label>
-                  <label class="relative">
-                    <input type="radio" name="giving-type" value="recurring" class="sr-only">
-                    <div class="border-2 border-gray-200 rounded-lg p-3 text-center cursor-pointer hover:border-primary-400 transition-colors duration-200">
-                      <span class="text-sm font-medium text-gray-700">Recurring</span>
-                    </div>
-                  </label>
+          <!-- Digital Payment Options -->
+          <div class="bg-white rounded-lg p-6 shadow-lg space-y-6">
+            <!-- QR Code Section -->
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4">
+                Scan to Give
+              </h4>
+              <div class="bg-gray-50 p-6 rounded-lg inline-block">
+                <div
+                  class="w-48 h-48 bg-white border-2 border-gray-200 rounded-lg flex items-center justify-center mx-auto mb-4"
+                >
+                  <img
+                    src="/images/qr.png"
+                    alt="UPI Payment QR Code"
+                    class="w-44 h-44 object-contain"
+                  />
                 </div>
+                <p class="text-sm text-gray-600 mb-2">Scan with any UPI app</p>
+                <p class="text-xs text-gray-500 font-mono">
+                  UPI ID: joshuasuresh08@oksbi
+                </p>
               </div>
+            </div>
 
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Amount</label>
-                <div class="grid grid-cols-4 gap-2 mb-3">
-                  <button type="button" class="amount-btn border-2 border-gray-200 rounded-lg py-2 text-sm font-medium hover:border-primary-400 transition-colors duration-200" data-amount="25">$25</button>
-                  <button type="button" class="amount-btn border-2 border-gray-200 rounded-lg py-2 text-sm font-medium hover:border-primary-400 transition-colors duration-200" data-amount="50">$50</button>
-                  <button type="button" class="amount-btn border-2 border-gray-200 rounded-lg py-2 text-sm font-medium hover:border-primary-400 transition-colors duration-200" data-amount="100">$100</button>
-                  <button type="button" class="amount-btn border-2 border-gray-200 rounded-lg py-2 text-sm font-medium hover:border-primary-400 transition-colors duration-200" data-amount="250">$250</button>
-                </div>
-                <div class="relative">
-                  <span class="absolute left-3 top-3 text-gray-500">$</span>
-                  <input 
-                    type="number" 
-                    id="custom-amount" 
-                    placeholder="Custom amount"
-                    class="w-full pl-8 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
+            <!-- UPI ID Section -->
+            <div class="border-t pt-6">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4">
+                UPI Payment
+              </h4>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <p class="text-sm text-gray-600 mb-1">UPI ID</p>
+                    <p class="text-lg font-mono text-gray-900">
+                      joshuasuresh08@oksbi
+                    </p>
+                  </div>
+                  <button
+                    onclick="copyUPI()"
+                    class="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors duration-200"
                   >
-                </div>
-              </div>
-
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Designation</label>
-                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200">
-                  <option>General Fund</option>
-                  <option>Missions</option>
-                  <option>Building Fund</option>
-                  <option>Youth Ministry</option>
-                  <option>Community Outreach</option>
-                </select>
-              </div>
-
-              <button 
-                type="submit"
-                class="w-full bg-gradient-to-r from-primary-600 to-primary-700 text-white py-3 rounded-lg font-semibold hover:from-primary-700 hover:to-primary-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-              >
-                Continue to Secure Payment
-              </button>
-            </form>
-
-            <div class="mt-4 text-center">
-              <div class="flex items-center justify-center space-x-2 text-sm text-gray-500">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                </svg>
-                <span>Secured by Stripe • SSL Encrypted</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Other Giving Methods -->
-        <div class="space-y-6">
-          <!-- Mail -->
-          <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-primary-300 transition-colors duration-200">
-            <div class="flex items-start">
-              <div class="w-12 h-12 bg-gold-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
-                <svg class="w-6 h-6 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">Mail a Check</h3>
-                <p class="text-gray-600 mb-3">
-                  Send your check or money order to our church address. Make checks payable to "New Life House of Glory."
-                </p>
-                <div class="text-sm text-gray-700 bg-gray-50 p-3 rounded-lg">
-                  <strong>New Life House of Glory</strong><br>
-                  123 Faith Street<br>
-                  Your City, State 12345
+                    Copy
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- In-Person -->
-          <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-primary-300 transition-colors duration-200">
-            <div class="flex items-start">
-              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
-                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">Give in Person</h3>
-                <p class="text-gray-600 mb-3">
-                  Bring your gift to any Sunday service. We have offering boxes available during worship and at the exits.
-                </p>
-                <div class="text-sm text-gray-700">
-                  <strong>Sunday Services:</strong> 10:00 AM<br>
-                  <strong>Location:</strong> 123 Faith Street
+            <!-- Bank Transfer Section -->
+            <div class="border-t pt-6">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4">
+                Bank Transfer
+              </h4>
+              <div class="bg-gray-50 p-4 rounded-lg space-y-3">
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <p class="text-sm text-gray-600">Account Name</p>
+                    <p class="font-medium text-gray-900">
+                      New Life House of Glory
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-600">Account Number</p>
+                    <p class="font-mono text-gray-900">42307271290</p>
+                  </div>
                 </div>
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <p class="text-sm text-gray-600">IFSC Code</p>
+                    <p class="font-mono text-gray-900">SBIN0008155</p>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-600">Bank Name</p>
+                    <p class="font-medium text-gray-900">State Bank of India</p>
+                  </div>
+                </div>
+                <button
+                  onclick="copyBankDetails()"
+                  class="w-full bg-primary-600 text-white py-2 rounded-lg hover:bg-primary-700 transition-colors duration-200"
+                >
+                  Copy Bank Details
+                </button>
               </div>
             </div>
-          </div>
 
-          <!-- Bank Transfer -->
-          <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-primary-300 transition-colors duration-200">
-            <div class="flex items-start">
-              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
-                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">Bank Transfer</h3>
-                <p class="text-gray-600 mb-3">
-                  Set up automatic transfers directly from your bank account for consistent, recurring giving.
+            <!-- WhatsApp Confirmation -->
+            <div class="border-t pt-6">
+              <div class="bg-green-50 p-4 rounded-lg">
+                <div class="flex items-center mb-3">
+                  <svg
+                    class="w-5 h-5 text-green-600 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"
+                    ></path>
+                  </svg>
+                  <h5 class="font-semibold text-green-800">
+                    Confirm Your Donation
+                  </h5>
+                </div>
+                <p class="text-sm text-green-700 mb-3">
+                  After making your donation, please send us a screenshot via
+                  WhatsApp for confirmation.
                 </p>
-                <a href="/contact" class="text-primary-600 font-semibold hover:text-primary-800 transition-colors duration-200">
-                  Contact us for details →
+                <a
+                  href="https://wa.me/+916383807593?text=Hi,%20I%20have%20made%20a%20donation%20to%20New%20Life%20House%20of%20Glory.%20Please%20find%20the%20screenshot%20attached."
+                  target="_blank"
+                  class="inline-flex items-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors duration-200"
+                >
+                  <svg
+                    class="w-4 h-4 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"
+                    ></path>
+                  </svg>
+                  Send Screenshot
                 </a>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Impact Section -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Your Impact</h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-          See how your generous giving is making an eternal difference in our community and around the world.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="text-center">
-          <div class="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-            250+
-          </div>
-          <h3 class="font-semibold text-gray-900 mb-2">Families Served</h3>
-          <p class="text-gray-600 text-sm">Through our food pantry and community outreach programs</p>
-        </div>
-
-        <div class="text-center">
-          <div class="w-16 h-16 bg-gold-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-            15
-          </div>
-          <h3 class="font-semibold text-gray-900 mb-2">Missionaries Supported</h3>
-          <p class="text-gray-600 text-sm">Spreading the gospel in 8 different countries worldwide</p>
-        </div>
-
-        <div class="text-center">
-          <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-            500+
-          </div>
-          <h3 class="font-semibold text-gray-900 mb-2">Youth Impacted</h3>
-          <p class="text-gray-600 text-sm">Through our youth programs and summer camps</p>
-        </div>
-
-        <div class="text-center">
-          <div class="w-16 h-16 bg-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-            3
-          </div>
-          <h3 class="font-semibold text-gray-900 mb-2">Churches Planted</h3>
-          <p class="text-gray-600 text-sm">New congregations started in underserved communities</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stewardship -->
-  <section class="py-20 bg-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Faithful Stewardship</h2>
-        <p class="text-lg text-gray-600">
-          We take seriously our responsibility to steward your gifts with integrity and transparency.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-gray-50 rounded-xl p-6">
-          <h3 class="text-xl font-semibold text-gray-900 mb-4">Financial Transparency</h3>
-          <ul class="space-y-2 text-gray-600">
-            <li class="flex items-start">
-              <svg class="w-5 h-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-              </svg>
-              Annual financial reports available to all members
-            </li>
-            <li class="flex items-start">
-              <svg class="w-5 h-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-              </svg>
-              Independent financial audit conducted annually
-            </li>
-            <li class="flex items-start">
-              <svg class="w-5 h-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-              </svg>
-              Board oversight of all major financial decisions
-            </li>
-          </ul>
-        </div>
-
-        <div class="bg-gray-50 rounded-xl p-6">
-          <h3 class="text-xl font-semibold text-gray-900 mb-4">Fund Allocation</h3>
-          <div class="space-y-3">
-            <div class="flex justify-between items-center">
-              <span class="text-gray-700">Ministry & Operations</span>
-              <span class="text-primary-600 font-semibold">60%</span>
-            </div>
-            <div class="flex justify-between items-center">
-              <span class="text-gray-700">Missions & Outreach</span>
-              <span class="text-primary-600 font-semibold">25%</span>
-            </div>
-            <div class="flex justify-between items-center">
-              <span class="text-gray-700">Building & Facilities</span>
-              <span class="text-primary-600 font-semibold">10%</span>
-            </div>
-            <div class="flex justify-between items-center">
-              <span class="text-gray-700">Emergency Fund</span>
-              <span class="text-primary-600 font-semibold">5%</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-12">
-        <a href="/contact" class="inline-flex items-center text-primary-600 font-semibold hover:text-primary-800 transition-colors duration-200">
-          Request Detailed Financial Report
-          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="py-20 bg-primary-900 text-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-12">What Our Givers Say</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-primary-800 rounded-xl p-6">
-          <p class="text-blue-100 mb-4 italic">
-            "Giving to New Life House of Glory has become one of our family's greatest joys. 
-            Seeing the impact in our community and around the world fills our hearts with purpose."
-          </p>
-          <div class="flex items-center">
-            <div class="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center mr-3">
-              <span class="text-sm font-semibold">MJ</span>
-            </div>
-            <div>
-              <p class="font-semibold text-white">Michael & Jane</p>
-              <p class="text-blue-200 text-sm">Long-time supporters</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-primary-800 rounded-xl p-6">
-          <p class="text-blue-100 mb-4 italic">
-            "The transparency and faithfulness of this church's leadership gave us confidence 
-            to make this our church home and support the ministry financially."
-          </p>
-          <div class="flex items-center">
-            <div class="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center mr-3">
-              <span class="text-sm font-semibold">DL</span>
-            </div>
-            <div>
-              <p class="font-semibold text-white">David & Lisa</p>
-              <p class="text-blue-200 text-sm">New members</p>
             </div>
           </div>
         </div>
@@ -340,46 +190,99 @@ import Footer from '../components/Footer.astro';
   <Footer />
 
   <script>
-    // Amount button functionality
-    document.querySelectorAll('.amount-btn').forEach(button => {
-      button.addEventListener('click', function(e) {
-        e.preventDefault();
-        const amount = this.getAttribute('data-amount');
-        document.getElementById('custom-amount').value = amount;
-        
-        // Update button styles
-        document.querySelectorAll('.amount-btn').forEach(btn => {
-          btn.classList.remove('bg-primary-50', 'border-primary-500', 'text-primary-700');
-          btn.classList.add('border-gray-200', 'text-gray-700');
-        });
-        this.classList.add('bg-primary-50', 'border-primary-500', 'text-primary-700');
-        this.classList.remove('border-gray-200', 'text-gray-700');
-      });
-    });
+    // Wait for DOM to be fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      // Make functions global so onclick can access them
+      window.copyUPI = function () {
+        console.log("Copy button clicked"); // Debug line
+        const upiId = "joshuasuresh08@oksbi";
+        // Try modern clipboard API first
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard
+            .writeText(upiId)
+            .then(() => {
+              showNotification("UPI ID copied to clipboard!");
+            })
+            .catch(() => {
+              fallbackCopy(upiId);
+            });
+        } else {
+          // Fallback for older browsers or non-secure contexts
+          fallbackCopy(upiId);
+        }
+      };
 
-    // Radio button functionality
-    document.querySelectorAll('input[name="giving-type"]').forEach(radio => {
-      radio.addEventListener('change', function() {
-        const labels = document.querySelectorAll('input[name="giving-type"] + div');
-        labels.forEach(label => {
-          label.classList.remove('bg-primary-50', 'border-primary-500');
-          label.classList.add('border-gray-200');
-          label.querySelector('span').classList.remove('text-primary-700');
-          label.querySelector('span').classList.add('text-gray-700');
-        });
-        
-        const selectedLabel = this.nextElementSibling;
-        selectedLabel.classList.add('bg-primary-50', 'border-primary-500');
-        selectedLabel.classList.remove('border-gray-200');
-        selectedLabel.querySelector('span').classList.add('text-primary-700');
-        selectedLabel.querySelector('span').classList.remove('text-gray-700');
-      });
-    });
+      window.copyBankDetails = function () {
+        const bankDetails = `Account Name: New Life House of Glory
+Account Number: 1234567890
+IFSC Code: SBIN0001234
+Bank Name: State Bank of India`;
 
-    // Form submission
-    document.getElementById('giving-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('This would redirect to a secure Stripe payment page. Contact us to set up online giving!');
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard
+            .writeText(bankDetails)
+            .then(() => {
+              showNotification("Bank details copied to clipboard!");
+            })
+            .catch(() => {
+              fallbackCopy(bankDetails);
+            });
+        } else {
+          fallbackCopy(bankDetails);
+        }
+      };
+
+      // Fallback copy function
+      function fallbackCopy(text) {
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        textArea.style.top = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+
+        try {
+          document.execCommand("copy");
+          showNotification("Copied to clipboard!");
+        } catch (err) {
+          showNotification("Please copy manually: " + text);
+        }
+
+        document.body.removeChild(textArea);
+      }
+
+      // Show notification
+      function showNotification(message) {
+        // Remove any existing notifications
+        const existingNotification =
+          document.querySelector(".copy-notification");
+        if (existingNotification) {
+          existingNotification.remove();
+        }
+
+        const notification = document.createElement("div");
+        notification.className =
+          "copy-notification fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform transition-all duration-300 translate-x-full";
+        notification.textContent = message;
+        document.body.appendChild(notification);
+
+        // Slide in
+        setTimeout(() => {
+          notification.classList.remove("translate-x-full");
+        }, 100);
+
+        // Slide out after 3 seconds
+        setTimeout(() => {
+          notification.classList.add("translate-x-full");
+          setTimeout(() => {
+            if (document.body.contains(notification)) {
+              document.body.removeChild(notification);
+            }
+          }, 300);
+        }, 3000);
+      }
     });
   </script>
 </Layout>
