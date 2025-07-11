@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://newlifehouseofglory.com/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /_astro/
+
+# Allow important pages
+Allow: /
+Allow: /about
+Allow: /watch
+Allow: /prayer
+Allow: /support
+Allow: /contact
+Allow: /location
+Allow: /images/
